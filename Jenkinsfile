@@ -80,7 +80,7 @@ pipeline {
           dockerImage = docker.build registry + ":V$BUILD_NUMBER"
         }
         }
-  }
+
     stage('Upload Image'){
       steps{
         script{
